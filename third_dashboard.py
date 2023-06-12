@@ -6,16 +6,36 @@ DOING STREAMLIT 30 DAYS CHALLENGE
 
 @DAY4
 """
-import pandas as pd
-import numpy as np
-import plotly.graph_objects as go
-import plotly.express as px
-import streamlit as st
-from datetime import datetime
+# import pandas as pd
+# import numpy as np
+# import plotly.graph_objects as go
+# import plotly.express as px
+# import streamlit as st
+# from datetime import datetime
+
+# Made this new system to download the libraries if not present on the cloud platform, IN this case the "streamlit cloud", As error was there that some of libraries not found..
+try:
+    import pandas as pd
+    import numpy as np
+    import plotly.graph_objects as go
+    import plotly.express as px
+    import streamlit as st
+    from datetime import datetime
+
+except:
+
+    import pip
+    pip.main(["install", "numpy", "pandas", "plotly", "streamlit", "datetime"])
+
+    import pandas as pd
+    import numpy as np
+    import plotly.graph_objects as go
+    import plotly.express as px
+    import streamlit as st
+    from datetime import datetime
+
 
 # Defining the functions
-
-
 def style_negative(v, props=''):
     """Style negative values in dataframe"""
     try:
