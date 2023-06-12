@@ -7,3 +7,5 @@ Special Thanks to the streamlit community for awnsome 30 days of streamlit chall
 DOING STREAMLIT 30 DAYS CHALLENGE
 
 Link: https://30days-tmp.streamlit.app/?challenge
+
+"""
